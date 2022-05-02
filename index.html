@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Mateus Silveira</h1>
+  <div class="calculadora">
+    <h1>Calculadora</h1>
+    <p id="resultado"></p>
+
+    <ul>
+      <li><button onclick="clean()">C</button></li>
+      <li><button onclick="back()"><</button></li>
+      <li><button onclick="insert('/')">/</button></li>
+      <li><button onclick="insert('*')">x</button></li>
+    </ul>
+    <ul>
+      <li><button onclick="insert('7')">7</button></li>
+      <li><button onclick="insert('8')">8</button></li>
+      <li><button onclick="insert('9')">9</button></li>
+      <li><button onclick="insert('-')">-</button></li>
+    </ul>
+    <ul>
+      <li><button onclick="insert('4')">4</button></li>
+      <li><button onclick="insert('5')">5</button></li>
+      <li><button onclick="insert('6')">6</button></li>
+      <li><button onclick="insert('+')">+</button></li>
+    </ul>
+    <ul>
+      <li><button onclick="insert('1')">1</button></li>
+      <li><button onclick="insert('2')">2</button></li>
+      <li><button onclick="insert('3')">3</button></li>
+      <li><button class="buttonEqual" onclick="igual()">=</button></li>
+    </ul>
+    <ul class="ultimaLinha">
+      <li><button class="button0" onclick="insert('0')">0</button></li>
+      <li><button onclick="insert('.')">.</button></li>
+    </ul>
+  </div>
+</body>
+</html>
